@@ -15,6 +15,10 @@ app.listen(port, () => {
     console.log(`server hosted on ${port}`)
 });
 
+app.get('/' (req, res) => {
+    res.send('Welcome to todo api');
+})
+
 app.post('/todo/signup', (req, res) => {
     let email = req.body.email;
     let password = SHA256(req.body.password).toString();
