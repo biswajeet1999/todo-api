@@ -15,7 +15,7 @@ app.listen(port, () => {
     console.log(`server hosted on ${port}`)
 });
 
-app.get('/' (req, res) => {
+app.get('/' ,(req, res) => {
     res.send('Welcome to todo api');
 })
 
